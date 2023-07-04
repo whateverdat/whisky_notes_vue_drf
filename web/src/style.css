@@ -1,0 +1,70 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .nav-link {
+        @apply hover:text-gray-500 text-gray-700 dark:text-zinc-300 dark:border-slate-600 landscape:hover:translate-x-1 portrait:hover:underline transition-all
+    }
+    .nav-btn
+    {
+        @apply underline m-2 border-gray-500 font-bold text-sm rounded-2xl text-gray-500 hover:text-gray-700 hover:border-gray-700
+    }
+    .card {
+        @apply shadow-md rounded-md
+    }
+    .card-image {
+        @apply absolute w-full h-full top-0 left-0 opacity-80 dark:opacity-50 rounded-md
+    }
+    .card-link {
+        @apply absolute w-full h-full top-0 left-0 z-10 hover:bg-black opacity-5 rounded-md
+    }
+    .loading-text
+    {
+        @apply font-light text-gray-500 absolute top-1/2 left-1/2 portrait:text-lg portrait:left-32
+    }
+    .comment-card
+    {
+        @apply mx-auto py-5 border-b px-10 w-full border-zinc-400
+    }
+    body
+    {
+        @apply dark:bg-slate-700
+    }
+    h1 {
+        @apply text-5xl dark:text-zinc-200
+    }
+    h2 {
+        @apply text-2xl dark:text-zinc-300
+    }
+    h3 {
+        @apply text-xl dark:text-zinc-300
+    }
+    h4 {
+        @apply text-lg dark:text-zinc-300
+    }
+    h5 {
+        @apply text-sm dark:text-zinc-300
+    }
+    h6 {
+        @apply text-xs dark:text-zinc-300
+    }
+    p 
+    {
+        @apply dark:text-zinc-300
+    }
+    input, textarea 
+    {
+        @apply bg-zinc-100 dark:bg-slate-600 border-zinc-400 dark:text-zinc-300
+    }
+    a, button 
+    {
+        @apply dark:text-zinc-300 dark:hover:text-white
+    }
+    div 
+    {
+        @apply dark:border-zinc-300
+    }
+
+}
